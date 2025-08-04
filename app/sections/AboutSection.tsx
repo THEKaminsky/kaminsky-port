@@ -37,25 +37,25 @@ export default function AboutMeSection() {
           <div className="w-full md:w-3/5 text-gray-300 space-y-6 text-lg leading-relaxed">
             <p>
               I've been building software for almost a decade now—dabbling in
-              full-stack along the way—but frontend is where I’ve truly found my
-              rhythm. I’m drawn to that sweet spot where code meets design,
-              logic meets empathy, and users feel like the product was made just
-              for them.
+              full-stack along the way—but frontend is where I&apos;ve truly
+              found my rhythm. I&apos;m drawn to that sweet spot where code
+              meets design, logic meets empathy, and users feel like the product
+              was made just for them.
             </p>
             <p>
               My goal is always the same: build experiences that feel smooth,
               intuitive, and inclusive. I care deeply about accessibility,
               usability, and the little moments that turn a clunky interface
               into a seamless one. If something I build helps someone get where
-              they're going faster, with less friction—that’s the win.
+              they're going faster, with less friction—that&apos;s the win.
             </p>
             <p>
-              While I’m not a visual designer, I have a strong sense of UX and
-              love collaborating with design teams. I enjoy turning static
+              While I&apos;m not a visual designer, I have a strong sense of UX
+              and love collaborating with design teams. I enjoy turning static
               designs into living, breathing interfaces—with enough polish to
-              make users say, “Oooooh, that’s nice.” I code for people, not just
-              for specs, and I take pride in building products that actually
-              feel good to use.
+              make users say, “Oooooh, that&apos;s nice.” I code for people, not
+              just for specs, and I take pride in building products that
+              actually feel good to use.
             </p>
           </div>
         </motion.div>

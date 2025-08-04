@@ -20,10 +20,10 @@ export default function ContactSection() {
               transition={{ delay: 0.2 }}
             >
               <h2 className="text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-400 via-green-400 to-pink-400 text-transparent bg-clip-text">
-                Let's be friends.
+                Let&apos;s be friends.
               </h2>
               <p className="text-gray-400 text-center mb-4">
-                Ready to collaborate or have a project in mind? Let's chat.
+                Ready to collaborate or have a project in mind? Let&apos;s chat.
               </p>
               <div className="flex items-center justify-center gap-2 text-gray-400 mb-8">
                 <svg
