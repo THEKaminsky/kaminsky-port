@@ -48,6 +48,21 @@ export default function HeroSection() {
           </svg>
         </motion.div>
       </div>
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0">
+        <svg
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          className="w-full h-12"
+        >
+          <polygon fill="url(#angleGradient)" points="0,100 100,0 100,100" />
+          <defs>
+            <linearGradient id="angleGradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stopColor="#3B82F6" />
+              <stop offset="100%" stopColor="#10B981" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
     </section>
   );
 }
