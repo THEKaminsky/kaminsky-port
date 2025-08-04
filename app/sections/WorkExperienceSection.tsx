@@ -41,7 +41,16 @@ const experiences: Experience[] = [
     role: "Senior Frontend Engineer",
     description:
       "As the first frontend engineer on the Loyal project, I built the application from the ground up—establishing the architecture, tooling, and frontend practices in alignment with Loyal's engineering standards. Once the foundation was in place, I led feature development efforts, contributed to the design system, and championed user-focused improvements driven by research insights. As the team grew, I also played a key role in mentoring junior developers, guiding best practices, and fostering team collaboration.",
-    tech: ["Next.js", "Framer Motion", "Figma", "SASS", "Accessibility"],
+    tech: [
+      "React",
+      "React Native",
+      "TypeScript",
+      "styled-components",
+      "react-query/tanStack Query",
+      "Figma",
+      "User Research",
+      "Accessibility",
+    ],
   },
   {
     company: "EverTrue",

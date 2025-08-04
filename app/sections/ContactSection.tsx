@@ -24,6 +24,8 @@ export default function ContactSection() {
               </h2>
               <p className="text-gray-400 text-center mb-4">
                 Ready to collaborate or have a project in mind? Let&apos;s chat.
+                Whether it is a smaller project, freelance gig, or fitting into
+                a team, I&apos;m here to help and get things done.
               </p>
               <div className="flex items-center justify-center gap-2 text-gray-400 mb-8">
                 <svg
