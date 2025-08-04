@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutMeSection() {
   return (
-    <section className="relative py-24 px-4">
+    <section aria-labelledby="about-me-heading" className="relative py-24 px-4">
       <div className="relative z-10 max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0 }}
@@ -40,7 +40,8 @@ export default function AboutMeSection() {
               in full-stack along the way—but frontend is where I&apos;ve truly
               found my rhythm. I&apos;m drawn to that sweet spot where code
               meets design, logic meets empathy, and users feel like the product
-              was made just for them.
+              was made just for them. That could mean jumping onto an existing
+              project, and taking care of technical debt, or starting a new one.
             </p>
             <p>
               My goal is always the same: build experiences that feel smooth,
@@ -48,6 +49,14 @@ export default function AboutMeSection() {
               usability, and the little moments that turn a clunky interface
               into a seamless one. If something I build helps someone get where
               they&apos;re going faster, with less friction—that&apos;s the win.
+            </p>
+            <p>
+              Whether working on a team or solo, I&apos;m always looking for
+              ways to improve and provide the people around me with the
+              knowledge and tools they need to succeed. I&apos;m a strong
+              advocate for mentorship and collaboration, and I&apos;m always
+              looking for ways to help others improve and be as effective as
+              possible.
             </p>
             <p>
               While I&apos;m not a visual designer, I have a strong sense of UX

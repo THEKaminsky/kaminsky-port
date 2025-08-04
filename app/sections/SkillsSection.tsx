@@ -26,7 +26,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section className="relative py-24 px-4">
+    <section aria-labelledby="skills-heading" className="relative py-24 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.h2
           initial={{ opacity: 0 }}

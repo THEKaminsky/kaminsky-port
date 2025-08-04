@@ -16,7 +16,7 @@ export default function HeroSection() {
           Rob Kaminsky
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-8">
-          Senior Frontend Developer & UX Enthusiast & Accessibilty Advocate
+          Senior Frontend Developer | UX Enthusiast | Accessibilty Advocate
         </p>
         <div className="flex flex-wrap justify-center gap-4 text-sm">
           <Pill text="React" />
