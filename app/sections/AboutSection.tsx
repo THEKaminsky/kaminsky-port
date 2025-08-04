@@ -36,8 +36,8 @@ export default function AboutMeSection() {
           {/* Text block */}
           <div className="w-full md:w-3/5 text-gray-300 space-y-6 text-lg leading-relaxed">
             <p>
-              I've been building software for almost a decade now—dabbling in
-              full-stack along the way—but frontend is where I&apos;ve truly
+              I&apos;ve been building software for almost a decade now—dabbling
+              in full-stack along the way—but frontend is where I&apos;ve truly
               found my rhythm. I&apos;m drawn to that sweet spot where code
               meets design, logic meets empathy, and users feel like the product
               was made just for them.
@@ -47,7 +47,7 @@ export default function AboutMeSection() {
               intuitive, and inclusive. I care deeply about accessibility,
               usability, and the little moments that turn a clunky interface
               into a seamless one. If something I build helps someone get where
-              they're going faster, with less friction—that&apos;s the win.
+              they&apos;re going faster, with less friction—that&apos;s the win.
             </p>
             <p>
               While I&apos;m not a visual designer, I have a strong sense of UX
