@@ -12,7 +12,7 @@ type Project = {
   link?: string;
 };
 
-const projects = [
+const projects: Project[] = [
   {
     title: "Medical Referral Platform",
     description:
