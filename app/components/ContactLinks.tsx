@@ -8,7 +8,9 @@ export function ContactLinks({ className = "" }: { className?: string }) {
       <p className="m-0 text-[26px] font-semibold sm:text-[30px]">
         <CopyEmail email={CONTACT.email} display={CONTACT.emailDisplay} />
       </p>
-      <a href={CONTACT.linkedin}>LinkedIn</a>
+      <a href={CONTACT.linkedin} target="_blank" rel="noreferrer">
+        LinkedIn
+      </a>
     </div>
   );
 }
