@@ -19,7 +19,7 @@ export default function HeroSection() {
           I code for people, not just for specs.
         </h1>
         <p className="mt-8 max-w-[34em] text-xl leading-relaxed sm:text-[22px]">
-          I&apos;m Rob Kaminsky, a senior frontend and mobile engineer. For over ten years I&apos;ve built
+          I&apos;m Rob Kaminsky, a Senior Frontend &amp; Mobile Engineer. For over ten years I&apos;ve built
           React and React Native products, the design systems behind them, and the small details that
           make people say &ldquo;oooh, that&apos;s nice.&rdquo;
         </p>
