@@ -2,24 +2,124 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #101828;
-}
-
-@layer utilities {
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+@layer base {
+  /* The page is an engineering pad: a faint 24px grid on green-tinted paper. */
+  body {
+    @apply bg-paper font-serif text-graphite antialiased;
+    background-image: linear-gradient(theme("colors.grid") 1px, transparent 1px),
+      linear-gradient(90deg, theme("colors.grid") 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: -1px -1px;
   }
 
-  .animate-gradient {
-    animation: gradient 15s ease infinite;
+  a {
+    @apply text-ink underline decoration-1 underline-offset-[3px] hover:text-ink-dark;
+  }
+
+  :focus-visible {
+    @apply rounded-sm outline outline-[3px] outline-offset-[3px] outline-ink;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+@layer components {
+  /* A link stamped onto the page: typed text in an ink outline that fills in on hover. */
+  .stamp-link {
+    @apply inline-flex items-center gap-1.5 rounded-[3px] border-2 border-ink px-3.5 py-2 font-typed text-[17px] font-bold text-ink no-underline transition-colors hover:bg-ink hover:text-paper;
+  }
+
+  /* Typed labels: dates, captions, card labels. */
+  .typed-label {
+    @apply font-typed text-base not-italic tracking-normal text-graphite-soft sm:text-[17px];
+  }
+
+  /* Marker stroke sits in the lower part of the line, like a real highlighter pass. */
+  .highlight {
+    @apply bg-transparent px-0.5 text-inherit;
+    background-image: linear-gradient(
+      transparent 38%,
+      theme("colors.highlighter") 38%,
+      theme("colors.highlighter") 88%,
+      transparent 88%
+    );
+  }
+
+  /* Paper lifted slightly off the page. */
+  .taped-shadow {
+    box-shadow:
+      0 1px 2px rgb(38 43 37 / 0.25),
+      0 10px 24px -12px rgb(38 43 37 / 0.45);
+  }
+
+  /* A strip of translucent tape. Position and tilt come from the caller. */
+  .tape {
+    @apply pointer-events-none absolute z-10 h-[26px] w-24;
+    background: rgb(250 248 220 / 0.72);
+    border: 1px solid rgb(200 196 150 / 0.6);
+  }
+
+  /*
+   * A 3x5 index card: blue rules every 32px and a red margin line at 48px.
+   * Text sits on a 32px line-height so every line lands on a rule.
+   */
+  .index-card {
+    @apply bg-card leading-8;
+    background-image:
+      linear-gradient(
+        90deg,
+        transparent 47px,
+        theme("colors.card.margin") 47px,
+        theme("colors.card.margin") 48px,
+        transparent 48px
+      ),
+      repeating-linear-gradient(
+        transparent 0,
+        transparent 31px,
+        theme("colors.card.rule") 31px,
+        theme("colors.card.rule") 32px
+      );
+    background-position:
+      0 0,
+      0 22px;
+  }
+}
+
+/* Ballpoint loop around the copied email: draws itself, holds, fades. */
+@layer components {
+  .pen-circle path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: pen-circle-draw 520ms cubic-bezier(0.3, 0.7, 0.4, 1) forwards;
+  }
+
+  .pen-circle {
+    animation: pen-circle-fade 400ms ease 1.5s forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    /* The global rule drops the animation; show the loop drawn instead of not at all. */
+    .pen-circle path {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@keyframes pen-circle-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pen-circle-fade {
+  to {
+    opacity: 0;
   }
 }

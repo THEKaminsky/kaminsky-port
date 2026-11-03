@@ -1,25 +1,26 @@
-"use client";
-
-import HeroSection from "./sections/HeroSection";
-import ProjectsSection from "./sections/ProjectsSection";
-import SkillsSection from "./sections/SkillsSection";
-import ContactSection from "./sections/ContactSection";
 import AboutSection from "./sections/AboutSection";
-import WorkExperienceSection from "./sections/WorkExperienceSection";
+import ContactSection from "./sections/ContactSection";
+import HeroSection from "./sections/HeroSection";
+import SiteHeader from "./sections/SiteHeader";
+import WorkSection from "./sections/WorkSection";
 
-export default function FrontendPortfolio() {
+export default function Home() {
   return (
-    <>
-      <div className="fixed inset-0 -z-10 bg-[length:300%_300%] bg-fixed animate-gradient bg-[linear-gradient(-45deg,#0F172A,#1E293B,#152C54,#0F172A)]" />
-
-      <main className="min-h-screen text-white overflow-x-hidden">
-        <HeroSection />
-        <AboutSection />
-        <WorkExperienceSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <ContactSection />
-      </main>
-    </>
+    <div className="px-6 pb-24">
+      <div className="mx-auto max-w-[1040px]">
+        <SiteHeader />
+        <main>
+          <HeroSection />
+          <WorkSection />
+          <AboutSection />
+          <ContactSection />
+        </main>
+        <footer className="mt-24">
+          <p className="typed-label m-0">
+            &copy; {new Date().getFullYear()} Rob Kaminsky. All notes my own.
+          </p>
+        </footer>
+      </div>
+    </div>
   );
 }

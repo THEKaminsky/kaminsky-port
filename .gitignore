@@ -3,3 +3,6 @@
 .env
 .DS_Store
 .next
+
+# TypeScript incremental build cache
+*.tsbuildinfo
