@@ -61,7 +61,7 @@ export default function TamkoStrongCaseStudy() {
           and mobile, and <Highlight>launched in October 2026</Highlight>.
         </p>
       }
-      builtWith="React Native 0.81, Expo SDK 54, react-native-web, TypeScript, NativeWind and Zustand"
+      builtWith="React Native 0.81, Expo SDK 54, react-native-web, TypeScript, NativeWind and Zustand, over a .NET API on Salesforce"
       lesson={{
         lesson: "Share the frame, not the flow.",
         whatHappened:
